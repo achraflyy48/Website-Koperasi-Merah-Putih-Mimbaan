@@ -45,7 +45,7 @@ Project ini bersifat **statis** dan dibangun dengan pendekatan **frontend-focuse
 
 ## 📸 Preview
 
-![Preview Website](link-screenshot-kamu)
+![Preview Website](assets/kmppreview.png)
 
 ---
 
@@ -71,7 +71,7 @@ Project ini bersifat **statis** dan dibangun dengan pendekatan **frontend-focuse
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js
+│   └── kmp.js
 ├── assets/
 │   ├── images/
 │   └── icons/
@@ -91,8 +91,8 @@ Project ini bersifat **statis** dan dibangun dengan pendekatan **frontend-focuse
 
 Jika ingin berdiskusi atau berkolaborasi:
 
-* LinkedIn: https://linkedin.com/in/username-kamu
-* Email: [emailkamu@gmail.com](mailto:emailkamu@gmail.com)
+* Instagram: https://www.instagram.com/achraflyy_/
+* Email: achmadraflitp@gmail.com
 
 ---
 
