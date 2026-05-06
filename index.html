@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koperasi Merah Putih</title>
+    <!-- Font Inter dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Skrip Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigasi -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <!-- Logo dan Nama Koperasi -->
+            <div class="flex items-center space-x-2">
+                <a href="#beranda" class="transition duration-300 transform hover:scale-105">
+                    <img src="assets/LogoKMPMimbaan.jpeg" alt="Logo Koperasi Merah Putih" class="h-10 w-10 rounded-full">
+                </a>
+                <span class="text-2xl font-bold text-red-600">KMP MIMBAAN</span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#beranda" class="nav-link text-gray-600 hover:text-red-600 transition duration-300">Beranda</a>
+                <a href="#tentang-kami" class="nav-link text-gray-600 hover:text-red-600 transition duration-300">Tentang Kami</a>
+                <a href="#produk-layanan" class="nav-link text-gray-600 hover:text-red-600 transition duration-300">Produk & Layanan</a>
+                <a href="#keanggotaan" class="nav-link text-gray-600 hover:text-red-600 transition duration-300">Keanggotaan</a>
+                <a href="#kontak" class="nav-link text-gray-600 hover:text-red-600 transition duration-300">Kontak</a>
+            </div>
+            <a href="#bergabung" class="bg-600 text-white font-semibold py-2 px-6 rounded-full shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105" style="background-color:#79161d;;">
+                Bergabung
+            </a>
+            
+            <!-- Tombol Hamburger untuk mobile -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md py-4">
+            <a href="#beranda" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 nav-link">Beranda</a>
+            <a href="#tentang-kami" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 nav-link">Tentang Kami</a>
+            <a href="#produk-layanan" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 nav-link">Produk & Layanan</a>
+            <a href="#keanggotaan" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 nav-link">Keanggotaan</a>
+            <a href="#kontak" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 nav-link">Kontak</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Bagian Beranda dengan Background Slide -->
+        <section id="beranda" class="relative section-padding h-[600px] overflow-hidden flex items-center justify-center text-center text-white">
+            <!-- Wadah untuk slideshow gambar -->
+            <div class="absolute inset-0 flex hero-slideshow">
+                <img src="assets/KMP1.jpeg" alt="Kegiatan Koperasi 1" class="w-full h-full object-cover flex-shrink-0">
+                <img src="assets/KMP3.jpeg" alt="Kegiatan Koperasi 2" class="w-full h-full object-cover flex-shrink-0">
+                <img src="assets/KMP2.jpeg" alt="Kegiatan Koperasi 3" class="w-full h-full object-cover flex-shrink-0">
+            </div>
+            <!-- Overlay untuk membuat teks lebih mudah dibaca -->
+            <div class="absolute inset-0 bg-black opacity-50"></div>
+            
+            <!-- Konten Beranda di atas gambar -->
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="max-w-3xl mx-auto fade-in-down">
+                    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-4">Mewujudkan Kesejahteraan Bersama Melalui Koperasi</h1>
+                    <p class="text-lg sm:text-xl font-light mb-8">Koperasi Merah Putih Kelurahan Mimbaan, pusat informasi dan layanan untuk memberdayakan masyarakat.</p>
+                    <a href="#bergabung" class="bg-white text-red-600 font-semibold py-3 px-8 rounded-full shadow-xl hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                        Bergabung Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Tentang Kami -->
+        <section id="tentang-kami" class="section-padding">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6" style="color: #79161d;">Tentang Kami</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Koperasi Merah Putih Kelurahan Mimbaan didirikan dengan tujuan mulia untuk meningkatkan kesejahteraan ekonomi anggota dan masyarakat sekitar. Sebagai bagian dari program pemerintah pusat, kami berkomitmen untuk menyediakan layanan keuangan dan program sosial yang transparan, adil, dan bermanfaat.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        Kami percaya bahwa dengan semangat gotong royong dan kebersamaan, kita dapat membangun masa depan yang lebih baik. Bergabunglah dengan kami dan menjadi bagian dari keluarga besar Koperasi Merah Putih.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Produk & Layanan -->
+        <section id="produk-layanan" class="section-padding bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10" style="color: #79161d;">Produk & Layanan Unggulan</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Kartu Produk 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div>
+                            <img src="wallet.png" alt="Logo Simpanan" width="50" height="30" class="center-img">
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 text-center mb-2 " style="font-weight: bold; color: #79161d;">Simpanan</h3>
+                        <p class="text-gray-600 text-center">Wujudkan impian finansial Anda dengan berbagai jenis simpanan yang aman dan menguntungkan.</p>
+                        <ul style="list-style-type: circle;">
+                            <li style="margin-top: 15px;">Simpanan Pokok & Wajib</li>
+                            <li style="margin-top: 5px;">Simpanan Sukarela Berjangka</li>
+                        </ul>
+                        <div style="font-weight: bold; text-align: center; margin-top: 15px; color:#79161d;">
+                            <p>Detail Simpanan -></p>
+                        </div>
+                    </div>
+                    <!-- Kartu Produk 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div>
+                            <img src="money.png" alt="Logo Pinjaman" width="50" height="30" class="center-img">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 text-center mb-2" style="color:#79161d;">Pinjaman</h3>
+                        <p class="text-gray-600 text-center">Dapatkan dukungan finansial untuk kebutuhan pribadi maupun pengembangan usaha Anda.</p>
+                        <ul style="list-style-type: circle;">
+                            <li style="margin-top: 15px;">Pinjaman Konsumtif</li>
+                            <li style="margin-top: 5px;">Pinjaman Modal Usaha</li>
+                            <li style="margin-top: 5px;">Pinjaman Pendidikan</li>
+                        </ul>
+                        <div style="font-weight: bold; text-align: center; margin-top: 15px; color:#79161d;">
+                            <p>Detail Pinjaman -></p>
+                        </div>
+                    </div>
+                    <!-- Kartu Produk 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div>
+                            <img src="customer-service.png" alt="Logo Layanan Lainnya" width="50" height="30" class="center-img">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 text-center mb-2" style="color:#79161d">Layanan Lainnya</h3>
+                        <p class="text-gray-600 text-center">Berbagai layanan tambahan untuk kemudahan dan kenyamanan anggota kami.</p>
+                        <ul style="list-style-type: circle;">
+                            <li style="margin-top: 15px;">Tabung Gas Elpiji 3kg</li>
+                            <li style="margin-top: 5px;">Peralatan ATK dan Fotocopy</li>
+                        </ul>
+                        <div style="font-weight: bold; text-align: center; margin-top: 15px; color:#79161d;">
+                            <p>Jelajahi Lainnya -></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Bagian Keanggotaan -->
+        <section id="keanggotaan" class="section-padding">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6" style="color: #79161d;">Bergabung dengan Koperasi Kami</h2>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                        Menjadi anggota Koperasi Merah Putih sangatlah mudah dan membawa banyak manfaat. Anda akan mendapatkan akses ke berbagai layanan eksklusif, kesempatan untuk berinvestasi, dan berpartisipasi dalam program-program pengembangan masyarakat.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed mb-8">
+                        Persyaratan sederhana: Warga Negara Indonesia, berdomisili di sekitar Kelurahan Mimbaan, dan bersedia mengikuti AD/ART koperasi.
+                    </p>
+                    <a href="#bergabung" class="text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-red-700 transition duration-300 transform hover:scale-105" style="background-color: #79161d;">
+                        Daftar Anggota
+                    </a>
+                </div>
+            </div>k
+        </section>
+iiioiio
+        <!-- Bagian Kontak -->
+        <section id="kontak" class="section-padding bg-gray-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10" style="color: #79161d;">Hubungi Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Informasi Kontak -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Kantor Pusat</h3>
+                        <p class="mb-2"><strong>Alamat:</strong> Jl. Pasar Panji No. 512 A, Kelurahan Mimbaan, Kecamatan Panji, Situbondo, Jawa Timur 68323</p>
+                        <p class="mb-2"><strong>Telepon:</strong> 085736184601</p>
+                        <p class="mb-2"><strong>Email:</strong> kmpkelurahanmimbaan@gmail.com</p>
+                        <p class="mb-2"><strong>Jam Kerja:</strong> Senin - Jumat, 08:00 - 16:00 WIB</p>
+                    </div>
+                    <!-- Google Maps -->
+                    <div class="bg-white rounded-xl shadow-lg map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.793740924967!2d114.00473721477755!3d-7.712614994432174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd719a779165b5d%3A0x70005d5e2e9c2f6d!2sKantor%20Kelurahan%20Mimbaan!5e0!3m2!1sid!2sid!4v1628178942940!5m2!1sid!2sid" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Bergabung (Join Us) -->
+        <section id="bergabung" class="section-padding bg-red-600 text-white text-center">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ayo, Bergabunglah Bersama Kami!</h2>
+                <p class="text-lg mb-8 max-w-2xl mx-auto">
+                    Hubungi kami secara langsung untuk memulai proses keanggotaan. Kami akan memandu Anda melalui langkah-langkahnya.
+                </p>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-lg text-gray-800">
+                    <a href="wa.me/+6285736184601" class="inline-block w-full bg-red-600 text-white font-semibold py-3 rounded-lg shadow-md hover:bg-red-700 transition duration-300 transform hover:scale-105">
+                        <span class="mr-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="inline-block w-5 h-5 -mt-1" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79l-1.97 1.97c1.83 3.61 4.79 6.57 8.41 8.41l1.97-1.97a.85.85 0 01.9-.22c.98.37 2.05.58 3.15.63l.31 1.76a.85.85 0 01-.76.99c-5.59-.72-9.67-4.8-10.39-10.39a.85.85 0 01.99-.76l1.76.31c.11 1.1-.1 2.17-.47 3.15a.85.85 0 01-.22.9z"/>
+                            </svg>
+                        </span>
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Koperasi Kelurahan Merah Putih Mimbaan. <br>Hak Cipta Dilindungi Undang-Undang.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
+}
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  filter: invert(15%) sepia(72%) saturate(6323%) hue-rotate(343deg) brightness(51%) contrast(55%);;
+}
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    }
+.nav-link.active {
+    font-weight: 600;
+    color: #d1121e; /* Warna merah yang lebih gelap untuk link aktif */
+}
+/* Style untuk membuat iframe Google Maps responsif */
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Rasio aspek 16:9 */
+    position: relative;
+    height: 0;
+}
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in-down {
+    animation: fadeInDown 0.8s ease-out;
+}
+/* Animasi untuk slideshow hero/beranda */
+    @keyframes slideHero {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0%); } /* Kembali ke slide pertama */
+    100% { transform: translateX(0%); }
+}
+
+.hero-slideshow {
+    animation: slideHero 5s infinite;
+}
