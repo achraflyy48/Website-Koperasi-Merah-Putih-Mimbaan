@@ -51,8 +51,7 @@ Project ini bersifat **statis** dan dibangun dengan pendekatan **frontend-focuse
 
 ## 🚀 Live Demo
 
-🔗 https://link-website-kamu.com
-*(Jika belum ada, bisa deploy via GitHub Pages / Netlify)*
+🔗 https://achraflyy48.github.io/Website-Koperasi-Merah-Putih-Mimbaan/
 
 ---
 
